@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xri version="1.0">
+
+<description>
+<p>
+PhotonDumpsterFire PixInsight Script Suite
+
+Everything is Fine.
+</p>
+</description>
+
+<platform os="all" arch="noarch" version="1.9.4:1.9.9">
+
+<package
+fileName="PhotonDumpsterFire.zip"
+sha1="0939d7e1dcad5df32f66351faa3c119325e8b8bb"
+type="script"
+releaseDate="20260603">
+
+<title>
+PhotonDumpsterFire v1.0
+</title>
+
+<description>
+<p>
+GradientInspector
+
+StretchInspector
+
+ProcessContainerPlus
+
+NarrowbandPaletteBlender
+
+IterativeStretch
+
+ExoplanetInspector
+
+Everything is Fine.
+</p>
+</description>
+
+</package>
+
+</platform>
+
+</xri>
