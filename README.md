@@ -58,11 +58,11 @@ src/scripts/PhotonDumpsterFire
 
 ## GradientInspector
 
-Analyze gradients and illumination issues across an image.
+Analyze gradients and illumination issues across multiple images at one time.
 
 ## StretchInspector
 
-Evaluate stretch quality and histogram distribution.
+Evaluate stretch quality and histogram distribution between multiple images using different stretch methods.
 
 ## ProcessContainerPlus
 
