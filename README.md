@@ -58,23 +58,23 @@ src/scripts/PhotonDumpsterFire
 
 ## GradientInspector
 
-Analyze gradients and illumination issues across multiple images at one time.
+Runs up to five gradient removal tools side by side and displays a comparison mosaic. Pick the winner and apply it in one click.
 
 ## StretchInspector
 
-Evaluate stretch quality and histogram distribution between multiple images using different stretch methods.
+Compares six stretch methods on the same image in a single mosaic. See how different stretching methods handle your data before committing.
 
 ## ProcessContainerPlus
 
-Enhanced process container workflow management.
+Full linear batch processing pipeline in one script. Gradient removal, stretch tool selection, and star recombination with configurable options per run.
 
 ## NarrowbandPaletteBlender
 
-Blend SHO, HOO, and custom narrowband palettes.
+SHO and HOO palette blending with real-time zoom and pan preview. Dial in your narrowband mix before applying.
 
 ## IterativeStretch
 
-Adaptive multi-pass stretch engine for astrophotography data.
+Progressive multi-pass Histogram Transoformation stretch with per-pass intensity stepping. Mimics a manual GHS workflow automatically. Includes Stars Only mode for star-extracted images.
 
 ## ExoplanetInspector
 
