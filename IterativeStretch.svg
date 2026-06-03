@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#111133"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#4499dd"/>
+    </marker>
+  </defs>
+  <rect width="64" height="64" rx="4" fill="url(#bg)"/>
+  <line x1="8" y1="54" x2="8" y2="10" stroke="#334" stroke-width="1"/>
+  <line x1="8" y1="54" x2="58" y2="54" stroke="#334" stroke-width="1"/>
+  <!-- Histogram -->
+  <polyline points="8,54 12,52 16,44 20,32 24,22 28,30 32,42 36,50 40,53 58,54" fill="#1a2244" stroke="none"/>
+  <polyline points="8,54 12,52 16,44 20,32 24,22 28,30 32,42 36,50 40,53 58,54" fill="none" stroke="#4466aa" stroke-width="1.2"/>
+  <!-- BP -->
+  <line x1="12" y1="10" x2="12" y2="54" stroke="#cc8822" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <!-- Three SP lines moving right -->
+  <line x1="16" y1="14" x2="16" y2="54" stroke="#5599ee" stroke-width="1.2" stroke-dasharray="2,2"/>
+  <line x1="24" y1="14" x2="24" y2="54" stroke="#5599ee" stroke-width="1" stroke-dasharray="2,2" opacity="0.7"/>
+  <line x1="32" y1="14" x2="32" y2="54" stroke="#5599ee" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.4"/>
+  <!-- Arrow -->
+  <line x1="16" y1="17" x2="31" y2="17" stroke="#4499dd" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="11" y="9" font-family="Arial" font-size="4.5" fill="#cc8822">BP</text>
+  <text x="14" y="9" font-family="Arial" font-size="4" fill="#5599ee">SP→</text>
+  <!-- "IS" label -->
+  <text x="44" y="22" font-family="Arial" font-size="12" font-weight="bold" fill="#4466aa" opacity="0.6">IS</text>
+</svg>

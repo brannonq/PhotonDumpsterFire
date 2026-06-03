@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1118"/>
+      <stop offset="1" stop-color="#1c2330"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d7dde4"/>
+      <stop offset="0.45" stop-color="#8793a2"/>
+      <stop offset="1" stop-color="#434b56"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d7f5ff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#5b7487" stop-opacity="0.30"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- tile -->
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="url(#bg)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="9.5" fill="none" stroke="#2e3a4d" stroke-width="1"/>
+
+  <!-- pitcher, full visible -->
+  <path d="M23 9 L42 9 L39 37 L26 37 Z" fill="url(#glass)" stroke="#b9d4e2" stroke-width="1.4"/>
+  <path d="M42 14 C50 15 50 30 40 31" fill="none" stroke="#b9d4e2" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- lid -->
+  <path d="M21 8 H44 V11 H21 Z" fill="url(#metal)" stroke="#c9d0d8" stroke-width="0.8"/>
+  <rect x="27" y="5.5" width="11" height="3" rx="1.5" fill="#c9d0d8"/>
+
+  <!-- narrowband swirl inside pitcher -->
+  <g filter="url(#softGlow)" stroke-linecap="round" fill="none">
+    <path d="M29 17 C39 13 43 22 35 25 C27 29 23 20 31 19" stroke="#ff7b35" stroke-width="3.1"/>
+    <path d="M34 18 C25 21 26 31 36 29 C43 27 40 19 33 22" stroke="#66dd66" stroke-width="3.1"/>
+    <path d="M29 29 C38 34 45 25 37 21 C30 17 25 25 31 27" stroke="#49a8ff" stroke-width="3.1"/>
+  </g>
+
+  <!-- pitcher highlights -->
+  <path d="M26 12 L24 35" stroke="#ffffff" stroke-opacity="0.32" stroke-width="1.2"/>
+  <path d="M39 12 L37 35" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+
+  <!-- blender neck -->
+  <path d="M27 37 H38 L40 43 H25 Z" fill="url(#metal)" stroke="#c4cbd3" stroke-width="1"/>
+
+  <!-- full base -->
+  <path d="M20 43 H44 L48 56 H16 Z" fill="url(#metal)" stroke="#c4cbd3" stroke-width="1.1"/>
+  <rect x="19" y="54" width="26" height="4" rx="2" fill="#313946" stroke="#8993a0" stroke-width="0.8"/>
+
+  <!-- controls -->
+  <circle cx="32" cy="49" r="3.2" fill="#18202b" stroke="#cbd3dc" stroke-width="0.9"/>
+  <circle cx="32" cy="49" r="1.2" fill="#49a8ff"/>
+  <circle cx="25" cy="50" r="1.2" fill="#ff7b35"/>
+  <circle cx="39" cy="50" r="1.2" fill="#66dd66"/>
+</svg>

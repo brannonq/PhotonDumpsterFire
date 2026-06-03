@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12"/>
+      <stop offset="1" stop-color="#1b222e"/>
+    </linearGradient>
+    <linearGradient id="grayPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c4f54"/>
+      <stop offset="1" stop-color="#1f2227"/>
+    </linearGradient>
+    <linearGradient id="greenPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#254b13"/>
+      <stop offset="1" stop-color="#07160a"/>
+    </linearGradient>
+    <linearGradient id="orangePanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a2d08"/>
+      <stop offset="1" stop-color="#130903"/>
+    </linearGradient>
+    <linearGradient id="finalPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101425"/>
+      <stop offset="1" stop-color="#05060b"/>
+    </linearGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="0.9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="url(#bg)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="9.5" fill="none" stroke="#303847" stroke-width="1"/>
+
+  <g filter="url(#softGlow)">
+    <polygon points="12,17 27,12 27,43 12,49" fill="url(#grayPanel)" stroke="#c8c8c8" stroke-width="1.8" opacity="0.82"/>
+    <polygon points="22,18 37,13 37,44 22,50" fill="url(#greenPanel)" stroke="#7cff3f" stroke-width="1.9" opacity="0.88"/>
+    <polygon points="32,20 47,15 47,46 32,52" fill="url(#orangePanel)" stroke="#ffb12a" stroke-width="1.9" opacity="0.94"/>
+    <polygon points="42,22 58,17 58,48 42,54" fill="url(#finalPanel)" stroke="#ff4646" stroke-width="2.0"/>
+  </g>
+
+  <g>
+    <path d="M50 31 L51.7 35.3 L56 37 L51.7 38.7 L50 43 L48.3 38.7 L44 37 L48.3 35.3 Z" fill="#f7f7ff"/>
+    <path d="M54 25 L54.8 27.2 L57 28 L54.8 28.8 L54 31 L53.2 28.8 L51 28 L53.2 27.2 Z" fill="#3aa8ff"/>
+    <path d="M51 45 L51.7 46.8 L53.5 47.5 L51.7 48.2 L51 50 L50.3 48.2 L48.5 47.5 L50.3 46.8 Z" fill="#ffb12a"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#111122"/>
+    </linearGradient>
+    <!-- 6 stretch curves in different colours -->
+    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2255aa"/><stop offset="100%" stop-color="#88aaff"/></linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#226622"/><stop offset="100%" stop-color="#88ff88"/></linearGradient>
+    <linearGradient id="c3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#aa6622"/><stop offset="100%" stop-color="#ffcc88"/></linearGradient>
+    <linearGradient id="c4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#882288"/><stop offset="100%" stop-color="#ff88ff"/></linearGradient>
+    <linearGradient id="c5" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#157788"/><stop offset="100%" stop-color="#88ffff"/></linearGradient>
+    <linearGradient id="c6" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#772222"/><stop offset="100%" stop-color="#ff8888"/></linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="4" fill="url(#bg)"/>
+  <!-- Axes -->
+  <line x1="8" y1="56" x2="8" y2="8" stroke="#444" stroke-width="1"/>
+  <line x1="8" y1="56" x2="60" y2="56" stroke="#444" stroke-width="1"/>
+  <!-- 6 stretch curves — each a different shape representing different algorithms -->
+  <!-- HT - classic sharp S -->
+  <path d="M8,56 Q20,54 30,40 Q40,26 56,10" fill="none" stroke="url(#c1)" stroke-width="1.8"/>
+  <!-- MAS - gentler lift -->
+  <path d="M8,56 Q18,52 28,38 Q40,22 56,12" fill="none" stroke="url(#c2)" stroke-width="1.8"/>
+  <!-- Bill Linked - medium S -->
+  <path d="M8,56 Q22,55 32,42 Q42,28 56,14" fill="none" stroke="url(#c3)" stroke-width="1.8"/>
+  <!-- Bill Unlinked - steeper -->
+  <path d="M8,56 Q16,53 26,36 Q38,18 56,8" fill="none" stroke="url(#c4)" stroke-width="1.8"/>
+  <!-- Statistical - log-like -->
+  <path d="M8,56 Q14,48 22,32 Q34,16 56,11" fill="none" stroke="url(#c5)" stroke-width="1.8"/>
+  <!-- VeraLux - hyperbolic -->
+  <path d="M8,56 Q12,50 20,34 Q32,14 56,9" fill="none" stroke="url(#c6)" stroke-width="1.8"/>
+  <!-- Title -->
+  <text x="32" y="63" font-family="Arial,sans-serif" font-size="5" font-weight="bold" fill="#888888" text-anchor="middle">StretchInspector</text>
+</svg>

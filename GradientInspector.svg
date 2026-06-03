@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="rg1" cx="70%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#cc3322"/>
+      <stop offset="50%" stop-color="#553355" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00aacc"/>
+    </radialGradient>
+    <radialGradient id="rg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="black" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="circle-clip">
+      <circle cx="28" cy="28" r="22"/>
+    </clipPath>
+  </defs>
+  <!-- Gradient blob circle -->
+  <circle cx="28" cy="28" r="22" fill="url(#rg1)"/>
+  <circle cx="28" cy="28" r="22" fill="url(#rg2)"/>
+  <!-- Grid overlay suggesting analysis -->
+  <g clip-path="url(#circle-clip)" opacity="0.25">
+    <line x1="6" y1="18" x2="50" y2="18" stroke="white" stroke-width="0.6"/>
+    <line x1="6" y1="28" x2="50" y2="28" stroke="white" stroke-width="0.6"/>
+    <line x1="6" y1="38" x2="50" y2="38" stroke="white" stroke-width="0.6"/>
+    <line x1="18" y1="6" x2="18" y2="50" stroke="white" stroke-width="0.6"/>
+    <line x1="28" y1="6" x2="28" y2="50" stroke="white" stroke-width="0.6"/>
+    <line x1="38" y1="6" x2="38" y2="50" stroke="white" stroke-width="0.6"/>
+  </g>
+  <!-- Circle border -->
+  <circle cx="28" cy="28" r="22" fill="none" stroke="#888" stroke-width="1"/>
+  <!-- Magnifying glass handle -->
+  <line x1="44" y1="44" x2="58" y2="58" stroke="#aaaaaa" stroke-width="4" stroke-linecap="round"/>
+  <line x1="44" y1="44" x2="58" y2="58" stroke="#666666" stroke-width="2" stroke-linecap="round"/>
+  <!-- Magnifying glass ring -->
+  <circle cx="28" cy="28" r="23" fill="none" stroke="#aaaaaa" stroke-width="2.5"/>
+  <circle cx="28" cy="28" r="23" fill="none" stroke="#444444" stroke-width="1"/>
+</svg>
