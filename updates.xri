@@ -13,13 +13,13 @@ Everything is Fine.
 <platform os="all" arch="noarch" version="1.9.4:1.9.9">
 
 <package
-fileName="PhotonDumpsterFire_v1_1.zip"
-sha1="7c49533c5b681a387bc441fa928914a1df59f020"
+fileName="PhotonDumpsterFire_v1_2.zip"
+sha1="8564bc5f15db77429354016de6c94877f2cdb8d3"
 type="script"
 releaseDate="20260610">
 
 <title>
-PhotonDumpsterFire v1.1
+PhotonDumpsterFire v1.2
 </title>
 
 <description>
@@ -33,6 +33,8 @@ ProcessContainerPlus
 NarrowbandPaletteBlender
 
 IterativeStretch
+
+BatchCrop
 
 ExoplanetInspector
 
